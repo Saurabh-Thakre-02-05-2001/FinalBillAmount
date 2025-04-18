@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.nt.service.*;
 @Controller("customerController")
 public class CustomerOperationController {
+	
 	@Autowired
 	private ICustomerManagementService customerService;
 	public String process_customer_details(Customer customer) throws Exception {
@@ -12,3 +13,4 @@ public class CustomerOperationController {
 		return result;
 	}
 }
+
